@@ -1,0 +1,21 @@
+.payment-list-item{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.payment-list-item span:nth-child(2){
+    font-weight: bold;
+    text-align: end;
+}
+
+.add-payment-btn{
+    color: #007bff;
+    padding: 4px;
+    align-self: flex-end;
+    
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}

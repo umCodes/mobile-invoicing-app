@@ -1,0 +1,82 @@
+/* .expenses-details{
+    width: 100vw;
+    
+} */
+
+.expense-card{
+    margin: 8px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 2px solid #D2D3D9;
+    color: #333;
+    min-width: 350px;
+
+}
+
+
+.expense-card .expense-info .expense-data h2,
+.expense-card .expense-info .expense-data p{
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 220px;
+}
+
+
+
+.expense-card .expense-amount{
+    display: flex;
+    justify-content: end;
+    padding-top: 16px;
+}
+
+
+h2,
+h3,
+b{
+    color: #000;
+
+}
+
+.expenses-details .action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+
+}
+.expenses-details .action-btns .action-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: brown;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+.expenses-details .action-btns .action-item i{
+    font-size: 1.2em;
+    width: 30px;
+    text-align: center;
+}
+
+
+
+
+h2,
+h3,
+b{
+    color: #000;
+}

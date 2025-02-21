@@ -1,0 +1,70 @@
+.overlay{
+    position: absolute;
+    width: 100svw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 100000;
+}
+
+.overlay.show{
+    display: flex;
+}
+
+.confirm {
+
+    width: 200pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12pt;
+    overflow: hidden;
+}
+
+.confirm .body {
+    padding: 18pt;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.confirm .body h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.confirm .body p {
+    margin: 0;
+    font-size: 10pt;
+    color: #666;
+}
+
+.confirm .buttons {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.confirm .buttons button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    background: none;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #007aff;
+    font-weight: 500;
+    outline: none;
+
+}
+
+.confirm .buttons .button2 {
+    color: red;
+    
+}

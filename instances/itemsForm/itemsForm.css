@@ -1,0 +1,9 @@
+.delete-item-btn{
+    padding: 8px 12px;
+    margin: 12px;
+    width: fit-content;
+    align-self: center;
+    background-color: rgb(230, 4, 4);
+    color: white;
+    border-radius: 12px;
+}

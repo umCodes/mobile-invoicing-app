@@ -1,0 +1,129 @@
+/* Style for option elements */
+option {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+
+/* Style for select elements */
+select {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+}
+
+
+.sort-wrapper{
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid #D2D3D9;
+    border-radius: 8px;
+    width: fit-content;
+    background-color: #fff;
+    
+}
+
+.items-section{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    overflow-y: hidden;
+}
+
+.items-list{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.items-list::-webkit-scrollbar{
+    display: none;
+}
+
+.clients-list .list-item{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.clients-list .list-item .client-name-n-email{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+.clients-list .list-item .client-name-n-email span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 220px;
+
+}
+
+.clients-list .list-item .client-balance{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90px;
+
+}
+
+
+.clients-list .list-item .client-balance span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90px;
+}
+
+.items-list .placeholder-text{
+    align-self: center;
+    margin: auto 0;
+    font-weight: 500;
+    color: #acacac;
+
+}
+
+
+
+.search-n-add-wrapper{
+    display: flex;
+    padding: 4px;
+
+}
+.search-n-add-wrapper input,
+.search-n-add-wrapper button{
+    margin: 4px 2px;
+    padding: 4px;
+    font-size: 1em;
+    border: 1px solid #D2D3D9;
+    outline: none;
+    border-radius: 4px;
+    
+}
+
+.search-n-add-wrapper input{
+    flex: 2;
+    font-size: 1em;
+
+}
+
+.search-n-add-wrapper button{
+    flex: .2;
+    aspect-ratio: 1/1;
+    font-size: 1em;
+    background-color: #ea6314;
+    color: #fff;
+}
+

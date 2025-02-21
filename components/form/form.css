@@ -1,0 +1,154 @@
+
+button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+.form{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 4px 0 gray;
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease-in-out;
+    z-index: 10000;
+    
+}
+
+
+.form.show{
+    height: 100vh;
+
+}
+
+.form .form-body{
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}    
+
+.form-body::-webkit-scrollbar {
+    display: none;
+}
+
+.form-body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.form .formDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    
+}
+
+
+.form .form-body .formDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 8px 0;
+    padding:  8px;
+    border-radius: 8px;
+    background-color: white;
+    white-space: nowrap;
+
+}
+
+    /* >Input */
+    .form .formDiv label{
+        width: fit-content;
+        flex: 1;
+        text-align: center;
+        font-size: 1.4em;
+                
+    }
+
+    .form .formDiv input{
+        border: 1px solid #D2D3D9;
+        border-radius: 8px;
+        caret-color: brown;
+        color: rgb(47, 47, 213);
+        margin: 8px 4px;
+        padding: 8px;
+        flex: 8;
+        font-size: 16px;
+    }
+
+
+    .required{
+        color: red;
+    }
+
+
+
+    /* >Select */
+    .form .formDiv select{
+        font-size: 1em;
+        padding: 8px;
+        border: none;
+        text-align: right;
+        outline: none;
+    }
+
+
+
+    .form .formDiv select option{
+        text-align: center;
+    }
+
+    /* >Textarea */
+    .textarea{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textarea label{
+        margin-right: auto;
+        margin-top: 12px;
+        padding: 4px 8px;
+    }
+
+    .textarea textarea{
+        width: 94%;
+        margin: 16px auto;
+        outline: none;
+        border: 1px solid #D2D3D9;
+        border-radius: 8px;
+        padding: 8px;
+    }
+    .textarea-container textarea:focus{
+        border: 1px solid brown;
+    }
+
+    /* save or cancel */
+
+    .save, .cancel{
+        background: none;
+        outline: none;
+        color: brown;
+
+
+    }
+
+
+    .save:disabled{
+        color: gray;
+    }
+
+    .saveOrCancel{
+        background-color: rgb(233, 233, 233);
+        padding: 12px;
+    }

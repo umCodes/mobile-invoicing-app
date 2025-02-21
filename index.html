@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile invoicing webapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="app-header">
+        <h1 id="heading">head</h1>
+    </header>
+    <section id="app-sections">
+        <section class="items-section">
+            <header>
+            <div class="search-n-add-wrapper">
+            <input type="text" class="search-bar items-search-bar" placeholder='Search in "Items"'>
+            <button class="add-item-btn">
+            <i class="fa-solid fa-plus"></i>
+            </button>
+            </div>
+            <div class="settings">
+            <div class="sort-wrapper">
+            <i class="fa-solid fa-sort"></i>
+            <select class="sort-select">
+                <option class="sort-option" value="byName" id="sortByName">Name</option>
+                <option class="sort-option" value="byStock" id="sortByStock">Stock</option>
+                <option class="sort-option" value="byPrice" id="sortByPrice">Price</option>
+            </select>
+            </div>
+            </div>
+            </header>
+            <div class="list items-list" id="items-list">
+            <p class="placeholder-text">No items available</p>
+            </div>
+        </section>
+
+        <section class="clients-section">
+            <header>
+            <div class="search-n-add-wrapper">
+            <input type="text" class="search-bar clients-search-bar" placeholder='Search in "Clients"'>
+            <button class="add-client-btn">
+            <i class="fa-solid fa-plus"></i>
+            </button>
+            </div>
+            <div class="settings">
+            <div class="sort-wrapper">
+            <i class="fa-solid fa-sort"></i>
+            <select class="sort-select sort-clients">
+                <option class="sort-option" value="byName" id="sortByName">Name</option>
+                <option class="sort-option" value="byBalance" id="sortbyBalance">Balance</option>
+            </select>
+            </div>
+            </div>
+            </header>
+            <div class="list clients-list" id="clients-list">
+            <p class="placeholder-text">No clients available</p>
+            </div>
+        </section>
+
+        <section class="orders-section">
+            <header>
+            <div class="search-n-add-wrapper">
+                <input type="text" class="search-bar orders-search-bar" placeholder='Search in "Orders"'>
+                <button class="add-order-btn">
+                <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="settings">
+                <div class="sort-wrapper">
+                <i class="fa-solid fa-sort"></i>
+                <select class="sort-select sort-orders">
+                    <option class="sort-option" value="byName" id="sortByName">Client</option>
+                    <option class="sort-option" value="byDate" id="sortByDate">Date</option>
+                    <option class="sort-option" value="byAmount" id="sortbyAmount">Amount</option>
+                </select>
+                </div>
+            </div>
+            </header>
+            <div class="list orders-list" id="orders-list">
+            <p class="placeholder-text">No orders available</p>
+            </div>
+        </section>
+
+        <section class="expenses-section">
+            <header>
+            <div class="search-n-add-wrapper">
+            <input type="text" class="search-bar expenses-search-bar" placeholder='Search in "Expenses"'>
+            <button class="add-expense-btn">
+            <i class="fa-solid fa-plus"></i>
+            </button>
+            </div>
+            <div class="settings">
+            <div class="sort-wrapper">
+            <i class="fa-solid fa-sort"></i>
+            <select class="sort-select sort-expenses">
+                <option class="sort-option" value="byName" id="sortByName">Name</option>
+                <option class="sort-option" value="byDate" id="sortByDate">Date</option>
+                <option class="sort-option" value="byAmount" id="sortbyAmount">Amount</option>
+            </select>
+            </div>
+            </div>
+            </header>
+            <div class="list expenses-list" id="expenses-list">
+            <p class="placeholder-text">No expenses available</p>
+            </div>
+        </section>
+
+        <section class="reports-section">
+            <div class="overall-reports reports">
+                <div class="total-sales-container reports-container">
+                    <span class="total-sales report">Total Sales</span>
+                    <i class="fa-solid fa-file total-sales-icon"></i>                
+                </div>
+                <div class="total-expenses-container reports-container">
+                    <span class="total-expenses report">Total Expenses</span>
+                    <i class="fa-solid fa-file total-expenses-icon"></i>
+                </div>
+                <div class="total-payments-container reports-container">
+                    <span class="total-received-payments report">Total Payments</span>
+                    <i class="fa-solid fa-file total-received-payments-icon"></i>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+
+    <nav id="navbar">
+        <span class="nav-btn items-btn selected">
+            <i class="fa-solid fa-box"></i>
+            Items
+        </span>
+        <span class="nav-btn clients-btn" id="addItemBtn">
+            <i class="fa-solid fa-user"></i>
+            Clients
+        </span>
+        <span class="nav-btn orders-btn">
+            <i class="fa-solid fa-receipt"></i>
+            Orders 
+        </span>
+        <span class="nav-btn expenses-btn">
+            <i class="fa-solid fa-coins"></i>
+            Expenses
+        </span>
+        </span>
+        <span class="nav-btn reports-btn">
+            <i class="fa-solid fa-chart-simple"></i>
+            Reports
+        </span>
+    </nav>
+    <div class="sorry-message">
+        <h1>Sorry, this webapp is not yet available on your device</h1>
+        <p>
+            If you are on desktop or a computer, inspect the source code by pressing 
+            <span class="key">Ctrl</span>+<span class="key">Shift</span>+<span class="key">I</span>
+            then toggle device toolbar 
+            <span class="key">Ctrl</span>+<span class="key">Shift</span>+<span class="key">M</span>, then choose a device's dimensions.
+        </p>
+    </div>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="./sections/items/items.js"></script>
+    <script type="module" src="./sections/clients/clients.js"></script>
+    <script type="module" src="./sections/orders/orders.js"></script>
+    <script type="module" src="./sections/expenses/expenses.js"></script>
+    <script type="module" src="./instances/clientsDetails/clientsDetails.js"></script>
+    <script type="module" src="./instances/ordersDetails/ordersDetails.js"></script>
+    <script type="module" src="./sections/reports/reports.js"></script>
+</body>
+</html>

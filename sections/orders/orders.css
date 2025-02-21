@@ -1,0 +1,58 @@
+.orders-list .list-item div{
+    width: 100%;
+}
+.orders-list .list-item .order-id-n-client{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.orders-list .list-item .order-id-n-client h3{
+    padding: 0;
+    margin: 0;
+}
+
+
+.orders-list .list-item .order-amount{
+    display: flex;
+    font-weight: bold;
+    justify-content: end;
+    border-top: 1px solid #D2D3D9;
+    padding-top: 8px;
+    margin-top: 8px;
+
+}
+
+
+.orders-list .list-item .order-amount .amount{
+    font-size: large;
+}
+
+.orders-list .list-item .order-amount .status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: lighter;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+.orders-list .list-item .order-amount .status[data-text = 'pending']{
+    background-color: #9f9f9f;
+}
+.orders-list .list-item .order-amount .status[data-text = 'completed']{
+    background-color: green;    
+    color: white;
+}
+
+.orders-list .list-item .order-amount .status[data-text = "checked"]{
+    background-color: rgb(20, 92, 207);    
+    color: white;
+}
+
+

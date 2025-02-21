@@ -1,0 +1,11 @@
+.expenses-list .list-item{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+}
+
+
+.expenses-list .list-item .expense-category-n-date{
+    display: flex;
+    flex-direction: column;
+}

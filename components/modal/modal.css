@@ -1,0 +1,194 @@
+/* >Modal */
+.modal,
+.newModal
+{
+    align-items: center;
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    width: 100vw;
+    transition: left .5s ease;
+    background-color: rgb(248, 248, 248);
+    box-shadow: -2px -2px 1px 1px #D2D3D9;
+    overflow: hidden;
+    border-radius: 16px;
+    transition: height .35s ease-in-out;
+    z-index: 10000;
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+}
+
+
+.modal.show
+{
+    height: 60svh;
+}
+
+.modal .modalHeader
+{
+    padding: 16px;
+}
+
+
+.modal .add-item
+{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    gap: 4px;
+    padding: 12px;
+}
+
+
+.modal .add-item input
+{
+    border: 1px solid #D2D3D9;
+    border-radius: 8px;
+    caret-color: brown;
+    margin: 8px 4px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.modal .add-item button
+{
+    background-color: #ea6314;
+    color: #fff;
+    border: 1px solid #D2D3D9;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+.modal .modal-body
+{
+    margin: 8px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.modal .add-to-modal-list,
+.newModal .add-to-modal-list
+
+{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+.modal .modal-body .list-item
+{
+    box-shadow: none;
+    border: 1px solid #D2D3D9;
+}
+
+.modal-close
+{  
+    font-size: 1em;
+    background: none;
+    overflow: auto;
+    padding: 4px;
+    color: brown;
+    background: none;
+
+
+}
+
+
+
+
+/* >Modal */
+/* .modal,
+.newModal{
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 100vw;
+    transition: left .5s ease;
+    background-color: rgb(248, 248, 248);
+    box-shadow: -2px -2px 1px 1px #D2D3D9;
+    border-radius: 16px;
+    transition: height .35s ease-in-out;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+.newModal{
+    height: 60svh;
+}
+
+
+.modal.show,
+.newModal.show
+{
+    height: 60svh;
+}
+
+.modal .modalHeader,
+.newModal .modalHeader
+{
+    padding: 16px;
+}
+
+
+.modal .add-item{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    gap: 4px;
+    padding: 12px;
+}
+
+
+.modal .add-item input{
+    border: 1px solid #D2D3D9;
+    border-radius: 8px;
+    caret-color: brown;
+    margin: 8px 4px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.modal .add-item button{
+    background-color: #ea6314;
+    color: #fff;
+    border: 1px solid #D2D3D9;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+.modal .modal-body,
+.newModal .modal-body
+{
+    margin: 16px;
+    overflow-y: scroll;
+}
+
+.modal .add-to-modal-list,
+.newModal .add-to-modal-list
+{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+.modal .modal-body .list-item{
+    box-shadow: none;
+    border: 1px solid #D2D3D9;
+}
+
+.modal-close{  
+    font-size: 1em;
+    background: none;
+    overflow: auto;
+    padding: 4px;
+    color: brown;
+    background: none;
+
+
+} */
+

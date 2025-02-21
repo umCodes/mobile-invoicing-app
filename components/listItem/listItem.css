@@ -1,0 +1,9 @@
+.list-item{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 2px solid #D2D3D9;
+    margin: 4px 8px;
+    padding: 12px;
+    border-radius: 12px;
+}

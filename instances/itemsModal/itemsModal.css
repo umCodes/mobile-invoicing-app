@@ -1,0 +1,96 @@
+.payment-list-item{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.payment-list-item span:nth-child(2){
+    font-weight: bold;
+    text-align: end;
+}
+
+.add-payment-btn{
+    color: #007bff;
+    padding: 4px;
+    align-self: flex-end;
+    
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-items-modal{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.add-items-modal .add-item{
+    display: none;
+}
+
+.add-items-modal .modal-body .list-item {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+
+.add-items-modal .modal-body .list-item .item-details{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add-items-modal .modal-body .list-item .item-details .item-name{
+    margin: 0;
+}
+
+.add-items-modal .modal-body .list-item .item-details .item-price{
+    font-weight: bold;
+    margin: 2px;
+}
+
+
+.add-items-modal .modal-body .list-item .item-details .item-unit
+{
+    padding: 2px 4px;
+    font-size: .85em;
+    user-select: none;
+    margin: 4px;
+    border-radius: 4px;
+    border: 1px solid #D2D3D9;
+    background-color: #D2D3D9;
+}
+
+.add-items-modal .modal-body .list-item .item-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-items-modal .modal-body .list-item .item-actions input
+{
+    width: 60px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #D2D3D9;
+    text-align: center;
+    font-size: 1em;
+    color: #000dfb;
+}
+
+
+
+.add-items-modal .modal-body .list-item .item-actions button{
+    width: fit-content;
+    margin: 8px;
+    padding: 4px 8px;
+    aspect-ratio: 1/1;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    
+
+}
+
+
